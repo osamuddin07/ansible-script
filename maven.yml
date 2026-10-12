@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks: 
+    - name: install maven in all servers
+      yum: 
+        name: maven
+        state: present
+...        
